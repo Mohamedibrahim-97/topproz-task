@@ -1,0 +1,29 @@
+<div class="card" >
+    <h5 class="card-header">{{productData?.title}}</h5>
+    <div class="card-body">
+      <p class="card-text desc">{{productData?.description}}</p>
+      <div class="row mb-3">
+        <div class="col-12 col-sm-6 mb-2">
+            <p class="card-text">Price: <span class="bold">${{productData?.price}}</span></p>
+        </div>
+        <div class="col-12 col-sm-6 mb-2">
+            <p class="card-text">Discount Percentage: <span class="bold">{{productData?.discountPercentage}}%</span></p>
+        </div>
+        <div class="col-12 col-sm-6 mb-2">
+            <p class="card-text">Rating: <span class="bold">{{productData?.rating}}</span></p>
+        </div>
+        <div class="col-12 col-sm-6 mb-2">
+            <p class="card-text">Stock: <span class="bold">{{productData?.stock}}</span></p>
+        </div>
+        <div class="col-12 col-sm-6 mb-2">
+            <p class="card-text">Brand: <span class="bold">{{productData?.brand}}</span></p>
+        </div>
+        <div class="col-12 col-sm-6 mb-2">
+            <p class="card-text">Category: <span class="bold">{{productData?.category}}</span></p>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center" >
+        <button type="button" class="btn btn-outline-success" routerLink="/products/edit/{{productData.id}}">Edit</button>
+      </div>
+    </div>
+  </div>

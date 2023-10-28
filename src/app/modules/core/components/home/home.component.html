@@ -1,0 +1,8 @@
+<div class="products-box container-fluid">
+    <h2 class="products-header mx-auto"><span>TopProz</span> Products</h2>
+    <div class="row">
+        <div class="col-md-4 mb-3" *ngFor="let product of products">
+            <app-product-card [productData]="product" [hideAction]="true"></app-product-card>
+        </div>
+    </div>
+</div>
